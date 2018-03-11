@@ -166,7 +166,8 @@ static int packet_handler(bool marker, uint64_t rtp_ts,
 }
 
 
-static void vidsrc_frame_handler(struct vidframe *frame, void *arg)
+static void vidsrc_frame_handler(struct vidframe *frame, uint64_t timestamp,
+				 void *arg)
 {
 	struct video_loop *vl = arg;
 	struct vidframe *f2 = NULL;
