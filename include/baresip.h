@@ -1023,6 +1023,8 @@ uint64_t video_calc_rtp_timestamp(int64_t pts, double fps);
 double video_calc_seconds(uint64_t rtp_ts);
 struct stream *video_strm(const struct video *v);
 
+double video_timestamp_to_seconds(uint64_t timestamp);
+
 
 /*
  * Generic stream
